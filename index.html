@@ -4,21 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- link css -->
     <link rel="stylesheet" href="./scss/main.css" />
-
     <title>Order summary card</title>
   </head>
   <body>
-    Order Summary You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like! Annual Plan $59.99/year
-    Change Proceed to Payment Cancel Order
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-      <a href="#">Your Name Here</a>.
-    </div>
+    <main>
+      <div class="container">
+        <div class="card">
+          <div class="card-img">
+            <img src="./images/illustration-hero.svg" alt="background" width="100%" />
+          </div>
+          <div class="card-content">
+            <div class="card-desc">
+              <h1 class="card-title">Order Summary</h1>
+              <p class="card-text">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+            </div>
+            <div class="card-option">
+              <div class="card-option-left">
+                <div class="card-icon">
+                  <img src="./images/icon-music.svg" alt="music" />
+                </div>
+                <div class="card-func">
+                  <span class="card-func-name">Annual Plan</span>
+                  <span class="card-func-coin">$59.99/year</span>
+                </div>
+              </div>
+              <div class="card-option-right">
+                <a href="#">Change</a>
+              </div>
+            </div>
+            <div class="card-button card-submit">
+              <button>Proceed to Payment</button>
+            </div>
+            <div class="card-button card-cancel">
+              <button>Cancel Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

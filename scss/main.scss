@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
-
 // base
 @import './base/reset';
 @import './base/variables';
+@import './base/base';
 
 // functions
 @import './functions/mixins';
 
 // components
+@import './components/button';
 @import './components/card';

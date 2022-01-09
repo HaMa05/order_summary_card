@@ -1,0 +1,103 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  @include flexbox;
+  background-image: url('../../images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  background-color: $pale-blue;
+}
+
+.card {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  margin: 0 15px;
+
+  &-img {
+    object-fit: cover;
+  }
+
+  &-content {
+    padding: 50px;
+  }
+  &-desc {
+    text-align: center;
+  }
+
+  &-title {
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: $dark-blue;
+  }
+
+  &-text {
+    color: $desaturated-blue;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+
+  &-option {
+    @include flexbox($justify: space-between);
+    padding: 25px;
+    background-color: $very-pale-blue;
+    border-radius: 10px;
+    margin-bottom: 32px;
+
+    &-left {
+      @include flexbox;
+    }
+
+    &-right {
+      a {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &-func {
+    @include flexbox(column);
+    margin-left: 20px;
+
+    &-name {
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: $dark-blue;
+    }
+
+    &-coin {
+      color: $desaturated-blue;
+    }
+  }
+
+  &-button {
+    text-align: center;
+    cursor: pointer;
+
+    button {
+      font-weight: 700;
+    }
+  }
+
+  &-submit {
+    border-radius: 10px;
+    background-color: $bright-blue;
+    padding: 15px;
+    margin-bottom: 35px;
+    box-shadow: 0 20px 15px 0 $pale-blue;
+
+    button {
+      color: #fff;
+    }
+  }
+
+  &-cancel {
+    button {
+      color: $desaturated-blue;
+    }
+  }
+}
