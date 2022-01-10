@@ -180,7 +180,7 @@ button {
 }
 .card-title {
   font-weight: 900;
-  font-size: 30px;
+  font-size: vmax(30px);
   margin-bottom: 20px;
   color: #1f2f56;
 }
@@ -209,6 +209,10 @@ button {
 }
 .card-option-right a {
   font-weight: 700;
+  transition: all 0.5s;
+}
+.card-option-right a:hover {
+  color: #7280a7;
 }
 .card-func {
   display: flex;
@@ -239,12 +243,25 @@ button {
   padding: 15px;
   margin-bottom: 35px;
   box-shadow: 0 20px 15px 0 #e0e8ff;
+  transition: all 0.5s;
 }
 .card-submit button {
   color: #fff;
 }
+.card-submit:hover {
+  background-color: #7280a7;
+}
 .card-cancel button {
   color: #7280a7;
+}
+.card-cancel button:hover {
+  color: #1f2f56;
+}
+
+@media screen and (max-width: 426px) {
+  .card-content {
+    padding: 25px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

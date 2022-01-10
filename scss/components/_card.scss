@@ -30,7 +30,7 @@
 
   &-title {
     font-weight: 900;
-    font-size: 30px;
+    font-size: vmax(30px);
     margin-bottom: 20px;
     color: $dark-blue;
   }
@@ -55,6 +55,11 @@
     &-right {
       a {
         font-weight: 700;
+        transition: all 0.5s;
+
+        &:hover {
+          color: $desaturated-blue;
+        }
       }
     }
   }
@@ -89,15 +94,24 @@
     padding: 15px;
     margin-bottom: 35px;
     box-shadow: 0 20px 15px 0 $pale-blue;
+    transition: all 0.5s;
 
     button {
       color: #fff;
+    }
+
+    &:hover {
+      background-color: $desaturated-blue;
     }
   }
 
   &-cancel {
     button {
       color: $desaturated-blue;
+
+      &:hover {
+        color: $dark-blue;
+      }
     }
   }
 }
